@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    background-color: var(--background1);
+}
+.countdown{
+    color: var(--accent);
+    font-size: 100px;
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    cursor: default;
+    transform: translate(-50%, -50%);
+}
+
+/* .start, .custom, .restart, .notify{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--accent);
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+.custom {
+    position: fixed;
+    left: 70%;
+    top: 70%;
+}
+.start{
+    position: fixed;
+    left: 20%;
+    top: 70%;
+}
+.restart{
+    position: fixed;
+    left: 20%;
+    top: 90%;
+}
+.notify{
+    position: fixed;
+    left: 70%;
+    top: 90%;
+}
+.start:hover, .custom:hover, .restart:hover, .notify:hover{
+    box-shadow: var(--shadowsmall);
+    background-color: var(--overaccent);
+    cursor: pointer;
+} */
+.buttons {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 70%;
+    left: 35%;
+    right: 35%;
+    margin-top: 10px;
+}
+.buttons a {
+    font-size: 50px;
+    color: var(--white);
+    background-color: var(--accent);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+#start1{
+    background-color: red;
+}
+#start2{
+    background-color: greenyellow;
+}
+.buttons a:hover{
+    box-shadow: var(--shadowsmall);
+    background-color: var(--overaccent);
+    cursor: pointer;
+}
+
+#hiden{
+    visibility: hidden;
+    padding-top: 310px;
+    padding-bottom: 370px;
+    z-index: -1;
+}
+
+/* 
+z-index: -1; 
+    background-color: var(--gray);
+*/
+/* padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+padding-left: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 10px;
+margin-left: 10px; */
