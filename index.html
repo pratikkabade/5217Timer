@@ -2,22 +2,25 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Countdown Timer</title>
+        <title>5217 Timer</title>
         <link rel="stylesheet" href="./assets/style.css">
         <link rel="stylesheet" href="https://app.staticsave.com/root/root.css">
         <link rel="stylesheet" href="https://app.staticsave.com/root/noselect.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/c5266611a7.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="./assets/logo.jpg">
     </head>
     <body id="thebody">
       <div class="noSelect">
         <div id="countdown" class="countdown"></div>
+        <div class="buttonsDiv">
+          <a onclick="start1()" class="buttons" id="start1"><i class="fa fa-code"></i> Work</a>
+          <a onclick="start2()" class="buttons" id="start2"><i class="fa fa-mobile"></i> Break</a>
+          <a onclick="custom()" class="buttons" id="custom"><i class="fa-solid fa-hourglass-empty"></i> Custom</a>
+        <!-- <a onclick="notify()" class="notify">notify</a> -->
+        </div>
       </div>
     </body>
-    <div class="buttons">
-      <a onclick="start1()" class="start" id="start1">Work</a>
-      <a onclick="start2()" class="start" id="start2">Break</a>
-      <a onclick="custom()" class="custom" id="break">Custom</a>
-      <!-- <a onclick="notify()" class="notify">notify</a> -->
-    </div>
     <script src="./assets/app.js"></script>
 </html>
 <div onclick="hid()">
