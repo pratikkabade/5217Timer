@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -10,7 +9,7 @@ body {
 .countdown{
     color: var(--accent);
     font-size: 100px;
-    width: 400px;
+    width: 300px;
     height: 300px;
     position: fixed;
     left: 50%;
@@ -19,69 +18,51 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* .start, .custom, .restart, .notify{
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--white);
-    background-color: var(--accent);
-    padding-top: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    border-radius: 20px;
+@media (max-width: 1100px) {
+    #custom {
+        display: none;
+    }
 }
-.custom {
-    position: fixed;
-    left: 70%;
-    top: 70%;
+@media (max-width: 700px) {
+    #start2 {
+        display: none;
+    }
 }
-.start{
-    position: fixed;
-    left: 20%;
-    top: 70%;
+
+.buttonsDiv{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 550px;
+    display: flex;
+    justify-content: space-around;
 }
-.restart{
-    position: fixed;
-    left: 20%;
-    top: 90%;
-}
-.notify{
-    position: fixed;
-    left: 70%;
-    top: 90%;
-}
-.start:hover, .custom:hover, .restart:hover, .notify:hover{
-    box-shadow: var(--shadowsmall);
-    background-color: var(--overaccent);
-    cursor: pointer;
-} */
-.buttons {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    top: 70%;
-    left: 35%;
-    right: 35%;
-    margin-top: 10px;
-}
-.buttons a {
-    font-size: 50px;
+.buttons{
+    text-align: center;
     color: var(--white);
     background-color: var(--accent);
     border-radius: 10px;
-    margin-left: 20px;
+    padding: 15px;
+    margin: 10px;
+    justify-content: space-around;
+    font-size: 35px;
+    font-weight: 550;
 }
-#start1{
-    background-color: red;
+.buttons i{
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 25px;
+    transition: var(--transition);
 }
-#start2{
-    background-color: greenyellow;
+.buttons i:hover{
+    filter: contrast(10);
 }
-.buttons a:hover{
-    box-shadow: var(--shadowsmall);
-    background-color: var(--overaccent);
+.buttons:hover{
     cursor: pointer;
+    box-shadow: var(--shadowsmall);
+    filter: brightness(1.4);
+    transform: scale(1.01);
 }
+
 
 #hiden{
     visibility: hidden;
@@ -90,15 +71,3 @@ body {
     z-index: -1;
 }
 
-/* 
-z-index: -1; 
-    background-color: var(--gray);
-*/
-/* padding-top: 10px;
-padding-bottom: 10px;
-padding-right: 10px;
-padding-left: 10px;
-margin-top: 10px;
-margin-bottom: 10px;
-margin-right: 10px;
-margin-left: 10px; */
