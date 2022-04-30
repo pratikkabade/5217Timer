@@ -23,7 +23,7 @@ function warn() {
     document.getElementById("hiden").style.visibility = "visible";
 }
 function hid() {
-    document.getElementById("hiden").style.visibility = "hidden";
+
     restart();
 }
 
@@ -69,9 +69,10 @@ function start1(){
     document.getElementById("countdown").innerHTML=("Work Mode")
     document.getElementById("countdown").style.color = "red";
     document.getElementById("thebody").style.background = "brown";
-    document.getElementById("start1").style.right  = "10px";
-    document.getElementById("start2").style.visibility = "hidden";
-    document.getElementById("break").style.visibility = "hidden";
+
+    document.getElementById("start1").style.boxShadow  = "var(--shadowsmall)";
+    document.getElementById("start1").style.filter  = "brightness(1.4)";
+    document.getElementById("start1").style.transform  = "scale(1.01)";
 
     countdown = setInterval(function(){
     "use strict";
@@ -113,9 +114,11 @@ function start2(){
     document.getElementById("countdown").innerHTML=("See ya")
     document.getElementById("countdown").style.color = "green";
     document.getElementById("thebody").style.background = "limegreen";
-    document.getElementById("start2").style.right  = "10px";
-    document.getElementById("start1").style.visibility = "hidden";
-    document.getElementById("break").style.visibility = "hidden";
+    
+    document.getElementById("start2").style.boxShadow  = "var(--shadowsmall)";
+    document.getElementById("start2").style.filter  = "brightness(1.4)";
+    document.getElementById("start2").style.transform  = "scale(1.01)";
+
 
     countdown = setInterval(function(){
     "use strict";
@@ -164,12 +167,13 @@ function custom(){
 
     secondPass();
     }, 1000);
-    document.getElementById("countdown").innerHTML=("Starting!")
+    document.getElementById("countdown").innerHTML=("On!")
     document.getElementById("countdown").style.color = "blue";
     document.getElementById("thebody").style.background = "skyblue";
-    document.getElementById("break").style.right  = "10px";
-    document.getElementById("start1").style.visibility = "hidden";
-    document.getElementById("start2").style.visibility = "hidden";
+
+    document.getElementById("break").style.boxShadow  = "var(--shadowsmall)";
+    document.getElementById("break").style.filter  = "brightness(1.4)";
+    document.getElementById("break").style.transform  = "scale(1.01)";
 
     function secondPass(){
         "use strict";
